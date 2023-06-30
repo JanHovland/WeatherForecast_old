@@ -88,7 +88,6 @@ extension Date {
 /// Hindre compiler warnings eksempel:
 ///  Non-sendable type 'Weather' exiting main actor-isolated context in call to non-isolated global function '' cannot cross actor boundary
 ///  Non-sendable type 'CLLocation' exiting main actor-isolated context in call to non-isolated global function '' cannot cross actor boundary
-///  Non-sendable type 'LocationViewModel' exiting main actor-isolated context in call to non-isolated global function '' cannot cross actor boundary
 ///  Non-sendable type 'Forecast<HourWeather>' exiting main actor-isolated context in call to non-isolated global function '' cannot cross actor boundary
 ///  Non-sendable type 'WeatherQuery>' exiting main actor-isolated context in call to non-isolated global function '' cannot cross actor boundary
 ///
@@ -113,7 +112,6 @@ extension Date {
 ///
 extension Weather: @unchecked Sendable {}
 extension CLLocation: @unchecked Sendable {}
-extension LocationViewModel: @unchecked Sendable {}
 extension Forecast<HourWeather>: @unchecked Sendable {}
 extension WeatherQuery: @unchecked Sendable {}
 

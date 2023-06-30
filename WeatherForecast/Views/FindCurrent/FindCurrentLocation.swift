@@ -12,19 +12,19 @@ import WeatherKit
 ///
 /// Finner nåværende posisjon:
 ///
-func FindCurrentLocation(_ locationViewModel: LocationViewModel) async -> (latitude: Double,
-                                                                           longitude: Double,
-                                                                           place: String,
-                                                                           offsetString: String,
-                                                                           offsetSec: Int,
-                                                                           date: Date,
-                                                                           condition: String,
-                                                                           temperature: Double,
-                                                                           lowTemperature: Double,
-                                                                           highTemperature: Double,
-                                                                           isDaylight: Bool,
-                                                                           flag: String,
-                                                                           country: String)  {
+func FindCurrentLocation() async -> (latitude: Double,
+                                     longitude: Double,
+                                     place: String,
+                                     offsetString: String,
+                                     offsetSec: Int,
+                                     date: Date,
+                                     condition: String,
+                                     temperature: Double,
+                                     lowTemperature: Double,
+                                     highTemperature: Double,
+                                     isDaylight: Bool,
+                                     flag: String,
+                                     country: String)  {
     var geoRecord: GeoRecord
     var weather: Weather?
     let weatherService = WeatherService.shared
@@ -43,7 +43,7 @@ func FindCurrentLocation(_ locationViewModel: LocationViewModel) async -> (latit
 
     
     let value : (Double, Double)
-    value = await GetCurrentLocation(locationViewModel)
+    value = await GetCurrentLocation()
     latitude = value.0
     longitude = value.1
     

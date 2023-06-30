@@ -13,8 +13,6 @@ import WeatherKit
 struct WeatherForecastSelectPlace: View {
     
     @StateObject var locationService = LocationService()
-    @StateObject var locationViewModel = LocationViewModel()
-
     
     @State private var searchText: String = ""
     @State private var place = Place(place: "", lon: nil, lat: nil)

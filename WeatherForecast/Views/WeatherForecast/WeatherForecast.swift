@@ -60,7 +60,6 @@ struct WeatherForecast: View {
     let weatherService = WeatherService.shared
     
     @StateObject var currentWeather = CurrentWeather()
-    @StateObject var locationViewModel = LocationViewModel()
     @Environment(\.dismiss) var dismissScreen
     
     @State private var weather : Weather?
@@ -420,7 +419,6 @@ struct WeatherForecast: View {
         }
     }
     .environmentObject(currentWeather)
-    .environmentObject(locationViewModel)
     }
     ///
     /// Rutine for oppfriskning:
@@ -444,7 +442,7 @@ struct WeatherForecast: View {
             /// Finner currentLocation:
             ///
             let value1: (Double, Double, String, String, Int, Date, String, Double, Double, Double, Bool, String, String)
-            value1 = await FindCurrentLocation(locationViewModel)
+            value1 = await FindCurrentLocation()
             latitude = value1.0
             longitude = value1.1
             placeName = value1.2
