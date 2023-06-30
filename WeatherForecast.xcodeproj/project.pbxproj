@@ -357,12 +357,14 @@
 				DB53CB3E2991A37C004D0C71 /* FindDayOffsetFactor.swift */,
 				DB5C0C2F29151C9600141BDC /* FindDataFromMenu.swift */,
 				DB8C17CE29DDB48100198DCB /* FindHourToCGFloat.swift */,
+				DBD497A32A4EAF160075B350 /* FindLocalPosition.swift */,
 				DB919BC12940B43100E69644 /* FindSunUpDown.swift */,
 				DB43C45C28F979A3007D44EC /* FormatDateToString.swift */,
 				DB2C677428E72F43002EC5C1 /* FormatPlace.swift */,
 				DBF2ABD629D4A4F0008ECB6C /* GetBaseDate.swift */,
-				DB85F9EA294751AF00D14013 /* IndexPointMarkFromHour.swift */,
 				DBAC1A19297FF4FC00D50DE6 /* GetCurrentLocation.swift */,
+				DB85F9EA294751AF00D14013 /* IndexPointMarkFromHour.swift */,
+				DBD497A12A4EAE9C0075B350 /* LocationsHandler.swift */,
 				DB5C0C312915263600141BDC /* MenuTitleToOption.swift */,
 				DBDDEA0029BDC86000301E77 /* RefreshOffset.swift */,
 				DBF1038429A92C56008B4281 /* SearchBar.swift */,
@@ -373,8 +375,6 @@
 				DB17F6AD295ECF0C00FC2A0B /* UvIndexDescription.swift */,
 				DBDBCC6529521B99005AEB05 /* WeatherTranslateType.swift */,
 				DB17F6AF295F6BA100FC2A0B /* WindDirection.swift */,
-				DBD497A12A4EAE9C0075B350 /* LocationsHandler.swift */,
-				DBD497A32A4EAF160075B350 /* FindLocalPosition.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
