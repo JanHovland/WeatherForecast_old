@@ -112,7 +112,8 @@ extension Date {
 ///
 extension Weather: @unchecked Sendable {}
 extension CLLocation: @unchecked Sendable {}
-extension Forecast<HourWeather>: @unchecked Sendable {}
+// extension Forecast<HourWeather>: @unchecked Sendable {}
+// extension Forecast<DayWeather>: @unchecked Sendable {}
 extension WeatherQuery: @unchecked Sendable {}
 
 
